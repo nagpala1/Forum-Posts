@@ -1,0 +1,196 @@
+
+*{
+	padding:0;
+	margin:0;
+	font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+body{
+	background-image:url('nature.jpg');
+	background-attachment:fixed;
+	background-position:center;
+}
+
+#list1{
+	position:absolute;
+	list-style-type:none;
+	margin:auto;
+	opacity:0;
+	background-color:green;
+	width:100%;
+	height:50px;
+}
+#list1 > li{
+	float:left;
+	margin:0 2.325%;
+	width:20%;
+	height:90%;
+	background-color:red;
+	text-align:center;
+	line-height:45px;
+	border:1px solid white;
+}
+
+#list1 > li.green{
+	background-color:#323232;
+}
+
+#list1 > li.orange{
+	background-color:#F0861C;
+}
+
+#list1 > li.red{
+	background-color:#E2281A;
+}
+
+#list1 > li.purple{
+	background-color: #B219A8;
+}
+
+#list1 > li > a{
+	color:white;
+	text-decoration:none;
+	display:block;
+	width:100%;
+}
+
+#list1 > li > a:first-letter{
+	font-weight:bold;
+}
+
+#list1 > li > a:hover{
+	background-color:#A10C2A;
+}
+
+#time {
+	position:absolute;
+	right:0;
+	width:120px;
+	top:0;
+	height:30px;
+	background-color:green;
+	border:2px solid white;
+	color:white;
+	opacity:0;
+	text-align:center;
+	z-index:2;
+}
+
+header{
+	position:relative;
+	text-align:center;
+	background-color:green;
+	font-size:1em;
+	text-shadow:2px 2px silver;
+	font-style:italic;
+	color:white;
+	line-height:100px;
+	opacity:0;
+}
+
+
+
+
+
+
+
+/* REST */
+
+
+
+
+
+
+
+#container {
+	position:relative;
+	top: 150px;
+	width:80%;
+	margin-left:10%;
+	margin-right:10%;
+}
+
+#container > #transparent {
+	position:absolute;
+	width:100%;
+	height:100%;
+	background-color:#F0861C;
+	opacity:0;
+}
+
+#container > #transparent2 {
+	position:absolute;
+	width:100%;
+	height:100%;
+	background-color:#E2281A;
+	opacity:0;
+}
+
+#container ul{
+	list-style-type: none;
+}
+#container > ul{
+	position:relative;
+	width:95%;
+	left:2.5%;
+	opacity:0;
+	height:99%;
+}
+
+#container > ul > li{
+	position:relative;
+	background-color:white;
+	width:99%;
+	margin-left:0.5%;
+	margin-bottom:2%;
+}
+
+#container > ul > li > h3 {
+	text-align:center;
+	background-color:black;
+	color:white;
+	padding:5px;
+}
+
+#container > ul > li > h3 > span{
+	color:#F0861C;
+}
+
+#container > ul > li > h3 > .mma{
+	color:#E2281A;
+}
+
+#container > ul > li > p{
+	padding:20px;
+	text-align: center;
+}
+
+#flash{
+	position:relative;
+	font-size:2em;
+	top:200px;
+	color:white;
+	text-align:center;
+	background-color:#F0861C;
+	opacity:0.8;
+}
+#flash > h2{
+	opacity: 0;
+}
+
+#flash:first-letter{
+	color:black;
+}
+
+@media screen and (max-width:600px){
+	#list1 > li{
+		margin:0 0.5%;
+		width:24%;
+		border:0;
+	}
+}
+
+@media screen and (max-width:420px){
+	#list1 > li{
+		font-size:0.85em;
+	}
+}

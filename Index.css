@@ -1,0 +1,238 @@
+*{
+		padding:0;
+		margin:0;
+		font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	}
+	body{
+		background-image:url('nature.jpg');
+		background-attachment:fixed;
+		background-position:center;
+	}
+
+	#extend{
+		position:absolute;
+		height:1100px;
+		width:100%;
+		background-color:gray;
+		opacity:0.1;
+	}
+
+	#list1{
+		position:absolute;
+		list-style-type:none;
+		margin:auto;
+		opacity:0;
+		background-color:green;
+		width:100%;
+		height:50px;
+	}
+	#list1 > li{
+		float:left;
+		margin:0 2.325%;
+		width:20%;
+		height:90%;
+		background-color:red;
+		text-align:center;
+		line-height:45px;
+		border:1px solid white;
+	}
+
+	#list1 > li.green{
+		background-color:#323232;
+	}
+
+	#list1 > li.orange{
+	background-color:#F0861C;
+}
+
+#list1 > li.red{
+	background-color:#E2281A;
+}
+
+#list1 > li.purple{
+	background-color: #B219A8;
+}
+
+	#list1 > li > a{
+		color:white;
+		text-decoration:none;
+		display:block;
+		width:100%;
+	}
+
+	#list1 > li > a:first-letter{
+		font-weight:bold;
+	}
+
+	#list1 > li > a:hover{
+		background-color:#A10C2A;
+	}
+
+	#time {
+		position:absolute;
+		right:0;
+		width:120px;
+		top:0;
+		height:30px;
+		background-color:green;
+		border:2px solid white;
+		color:white;
+		opacity:0;
+		text-align:center;
+		z-index:2;
+	}
+
+	header{
+		position:relative;
+		text-align:center;
+		background-color:green;
+		font-size:1em;
+		font-style:italic;
+		text-shadow:2px 2px silver;
+		color:white;
+		line-height:100px;
+		opacity:0;
+	}
+
+	#images{
+		position:relative;
+		height:400px;
+		width:80%;
+		top:150px;
+		margin:auto;
+		opacity:0;
+		border:1em solid white;
+		border-radius:20px;
+	}
+
+	#images > ul{
+		list-style-type: none;
+	}
+
+	#images > ul > li{
+		position:relative;
+		float:left;
+		width:50%;
+		height:400px;
+		background-position: 50% 30%;
+	}
+
+	#images > ul > li.firstpic{
+		background-image:url("winslow.jpg");
+	}
+	#images > ul > li.secondpic{
+		background-image:url("mousasi.jpg");
+	}
+
+	#images > ul > li.thirdpic{
+		background-image:url("whiteside.jpg");
+	}
+
+	#images > ul > li.fourthpic{
+		background-image:url("cormier.jpg");
+	}
+	#images > ul > li.fifthpic{
+		background-image:url("dragic.jpg");
+	}
+	#images > ul > li.sixthpic{
+		background-image:url("gastelum.jpg");
+	}
+	#images > ul > li.seventhpic{
+		background-image:url("haslem.jpg");
+	}
+	#images > ul > li.eightpic{
+		background-image:url("bisping.jpg");
+	}
+	#images > ul > li.ninthpic{
+		background-image:url("richardson.jpg");
+	}
+	#images > ul > li.tenthpic{
+		background-image:url("holm.jpg");
+	}
+	#images > ul > li.b1{
+		background-image:url("waiters.jpg");
+	}
+	#images > ul > li.b2{
+		background-image:url("mcgregor.jpg");
+	}
+
+	#images > ul > li > h3 > a{
+		position:absolute;
+		background-color:green;
+		color:white;
+		text-align:center;
+		bottom:0;
+		padding:5px;
+		text-decoration:none;
+	}
+
+	#images > ul > li > h3 > a.ball{
+		background-color:#F0861C;
+	}
+
+	#images > ul > li > h3 > a.mma{
+		background-color:#E2281A;
+	}
+
+	#about{
+		position:relative;
+		width:50%;
+		height:600px;
+		background-image:url("me.jpg");
+		background-position:25% 10%;
+		opacity:0;
+		margin:auto;
+		top:200px;
+		border:1em solid white;
+		border-radius:20px;
+	}
+
+	#about > p{
+		position:absolute;
+		background-color:green;
+		color:white;
+		width:100%;
+		bottom:0;
+		text-align:center;
+	}
+
+	#about > p > span{
+		font-weight:bold;
+	}
+
+	#flash{
+		position:relative;
+		top:300px;
+		font-size:2em;
+		color:white;
+		text-align:center;
+		background-color:green;
+		opacity:0.8;
+	}
+	#flash > h2{
+		opacity: 0;
+	}
+
+	#flash:first-letter{
+		color:black;
+	}
+
+@media screen and (max-width:600px){
+	#list1 > li{
+		margin:0 0.5%;
+		width:24%;
+		border:0;
+	}
+	#images{
+		width:90%;
+	}
+	#about{
+		width:80%;
+	}
+}
+
+@media screen and (max-width:420px){
+	#list1 > li{
+		font-size:0.85em;
+	}
+}
